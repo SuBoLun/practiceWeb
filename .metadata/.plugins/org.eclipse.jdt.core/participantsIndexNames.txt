@@ -1,5 +1,0 @@
-INDEX VERSION 1.131
-C:\Users\suiba\project\practiceWeb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3931214483.index
-\practiceWeb\src\main\java
-C:\Users\suiba\project\practiceWeb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1280582003.index
-\practiceWeb\src\main\resources

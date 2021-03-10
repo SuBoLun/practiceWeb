@@ -1,5 +1,0 @@
-package com.practiceWeb.util;
-
-public class HibernateUtil {
-
-}

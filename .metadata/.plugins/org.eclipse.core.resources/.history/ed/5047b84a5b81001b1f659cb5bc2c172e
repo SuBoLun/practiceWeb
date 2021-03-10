@@ -1,7 +1,0 @@
-package com.practiceWeb.rds.dao.impl;
-
-import com.practiceWeb.rds.dao.PersonDAO;
-
-@Repository
-public class PersonDAOImpl implements PersonDAO {
-}

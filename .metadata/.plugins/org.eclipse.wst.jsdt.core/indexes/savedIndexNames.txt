@@ -1,9 +1,0 @@
-INDEX VERSION 1.4+C:\Users\suiba\project\practiceWeb\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-3931214483.index
-1815471022.index
-3611938268.index
-1332817020.index
-3520202587.index
-3696215990.index
-3542486971.index
-3931214483.index
