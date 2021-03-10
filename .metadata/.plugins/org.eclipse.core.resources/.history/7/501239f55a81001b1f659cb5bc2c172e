@@ -1,0 +1,9 @@
+package com.practiceWeb.rds.dao.impl;
+
+import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+
+import com.practiceWeb.rds.dao.PersonDAO;
+
+public class PersonDAOImpl extends HibernateDaoSupport implements PersonDAO{
+
+}

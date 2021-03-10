@@ -1,0 +1,10 @@
+package com.practiceWeb.test;
+
+public class SpringJDBC {
+	
+	JDBCDataSource dataSource = new JDBCDataSource();
+	dataSource.setUrl("jdbc:hsqldb:file:src/main/resources/db/dvd_library");
+	dataSource.setUser("codedata");
+	dataSource.setPassword("123456");
+
+}
