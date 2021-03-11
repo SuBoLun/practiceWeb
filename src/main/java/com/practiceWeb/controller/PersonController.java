@@ -3,6 +3,7 @@ package com.practiceWeb.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,6 +14,7 @@ import com.practiceWeb.rds.entity.Person;
 import com.practiceWeb.rds.service.PersonService;
 
 @Controller
+@Transactional
 public class PersonController {
 
 	private PersonService personService;
@@ -46,14 +48,16 @@ public class PersonController {
 
 	}
 
-	@RequestMapping("/remove/{id}")
+	@RequestMapping(value = "/remove/{personId}", method = RequestMethod.GET)
 	public String removePerson(@PathVariable("personId") int personId) {
 
 		this.personService.removePerson(personId);
 		return "redirect:/persons";
+//		return "redirect:/hello";
+//		return "hello";
 	}
 
-	@RequestMapping("/edit/{personId}")
+	@RequestMapping(value = "/edit/{personId}", method = RequestMethod.GET)
 	public String editPerson(@PathVariable("personId") int personId, Model model) {
 		model.addAttribute("person", this.personService.getPersonById(personId));
 		model.addAttribute("listPersons", this.personService.listPersons());
